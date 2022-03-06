@@ -3,7 +3,7 @@ const cron = require('node-cron');
 
 venom
     .create({
-        session: 'session-name', //name of session
+        session: 'keka-notification', //name of session
         multidevice: false
     })
     .then((client) => {
@@ -14,10 +14,6 @@ venom
     .catch((erro) => {
         console.log(erro);
     });
-
-    console.log('====================================');
-    console.log('start');
-    console.log('====================================');
 
 function start(client) {
 
