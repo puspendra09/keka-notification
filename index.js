@@ -1,7 +1,6 @@
 const venom = require('venom-bot');
 const cron = require('node-cron');
 
-
 venom
     .create({
         session: 'session-name', //name of session
@@ -15,6 +14,10 @@ venom
     .catch((erro) => {
         console.log(erro);
     });
+
+    console.log('====================================');
+    console.log('start');
+    console.log('====================================');
 
 function start(client) {
 
